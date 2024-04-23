@@ -6,7 +6,7 @@ export default props =>{
     return(
         <View style ={{
             flex:1,
-            backgroundColor:"#5DEBD7",       
+            backgroundColor:"#7EA1FF",       
             marginTop:40 }}>               
             
             
@@ -17,7 +17,7 @@ export default props =>{
             }}>Tipos de Cortes </Text>
 
 <Card>
-        <Card.Title>Cabelos curtos</Card.Title>
+        <Card.Title>curtos</Card.Title>
         <CardDivider/>
         <View style={{
           position:'relative', 

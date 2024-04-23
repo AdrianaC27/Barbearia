@@ -1,11 +1,12 @@
 import React from "react";
-import{View,Text,Image,Button, Pressable} from "react-native";
+import{View,Text,Image, Pressable} from "react-native";
+import { Button } from "react-native-paper";
 
 export default props =>{
     return(
         <View style ={{
             flex:1,
-            backgroundColor:"#5DEBD7"  }}>
+            backgroundColor:"#7EA1F7"  }}>
                 
             <Pressable style={{
                 alignItems:'center',
@@ -24,8 +25,9 @@ export default props =>{
 
             
             <Text style={{
-                fontSize:24,
+                fontSize:30,
                 fontFamily:'Arial',
+                fontWeight: 'bold',
                 textAlign:'center',
                 marginTop:35
                 
@@ -36,6 +38,11 @@ export default props =>{
             <Text style={{
                 fontSize:24,
                 fontFamily:'Arial',
+                fontWeight: 'bold',
+                textAlign:'center',
+                marginTop:35,
+                color:'white'
+              
 
                     }} >Faça seu Corte Aqui!!!</Text>
                 
@@ -43,12 +50,26 @@ export default props =>{
                fontSize:24,
                fontFamily:'Arial',
                
+               
             }}>
-                    <Button 
-                         title="Tipos"
-                        onPress={()=> props.navigation.navigate('Tipos')}    
-                    />                       
-                        
+                <Button style={{
+                    backgroundColor:'#F4538A',
+                    margin:20,
+                    
+                    
+                }}onPress={()=> props.navigation.navigate('Tipos')} textColor="white" >
+                    TIPOS   
+
+                </Button>
+
+                <Button style={{
+                    backgroundColor:'#F4538A',
+                    margin:20
+                }}onPress={()=> props.navigation.navigate('Profissional')} textColor="white">
+                    PROFISSIONAL        
+
+                </Button>
+                    
             </View>
 
             <View>
