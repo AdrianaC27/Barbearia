@@ -7,7 +7,7 @@ export default props =>{
     return(
         <View style ={{
             flex:1,
-            backgroundColor:"#5DEBD7",
+            backgroundColor:"#7EA1FF",
             marginTop:40   }}>               
             
             

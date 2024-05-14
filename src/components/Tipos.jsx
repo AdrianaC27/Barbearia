@@ -26,7 +26,7 @@ export default props =>{
             <Image style= {{ width: "100%", height: 100 }}
                     resizeMode="contain" 
                     source={require('../Imagens/CabeloCurto.png')}/>
-            <Text> Joao Alves</Text>
+            <Text> Cabelo Curto </Text>
 
 
         </View>
