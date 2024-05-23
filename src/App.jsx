@@ -1,46 +1,85 @@
 import React from "react";
 import { SafeAreaView, Text } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
-import { createDrawerNavigator } from "@react-navigation/drawer";
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
+
 
 import Login from "./components/Login";
 import Profissional from "./components/Profissional";
-import Tipos from "./components/Tipos"
+import Tipos from "./components/Tipos";
+import Nomes from "./components/Nomes";
+import Produtos from "./components/Produtos";
+import Filtros from "./components/Filtros";
+import FiltrosProdutos from "./components/FiltrosProdutos";
+import Compras from "./components/Compras";
 
-const Drawer = createDrawerNavigator();
+const Stack = createNativeStackNavigator();
 
 export default props =>{
     return(
         <SafeAreaView style={{flex:1}}>
             <NavigationContainer>
-                <Drawer.Navigator initialRouteName="Login"
+                <Stack.Navigator initialRouteName="Login"
                     screenOptions={{
-                        drawerActiveBackgroundColor:'#1679AB',
+                        StActiveBackgroundColor:'#1679AB',
                         drawerActiveTintColor: '#C5FF95',
                         drawerPosition:'left'
 
                     }}>
 
-                <Drawer.Screen name ='Login'component={Login} options={{
+                <Stack.Screen name ='Login'component={Login} options={{
                     headerTitle:'', 
                     headerStyle:{backgroundColor:"#C5FF95"},
                     headerTransparent: 100,
                 }}/> 
-                <Drawer.Screen name ='Profissional' component={Profissional} options={{
+                <Stack.Screen name ='Profissional' component={Profissional} options={{
                     headerTitle:'', 
                     headerStyle:{backgroundColor:"#C5FF95"},
                     headerTransparent: 100,
                 }}/>  
-                <Drawer.Screen name ='Tipos'component={Tipos}options={{
+                
+                <Stack.Screen name ='Tipos'component={Tipos}options={{
                     headerTitle:'', 
                     headerStyle:{backgroundColor:"#C5FF95"},
                     headerTransparent: 100,
                 }}/>    
 
+                <Stack.Screen name ='Nomes'component={Nomes}options={{
+                    headerTitle:'', 
+                    headerStyle:{backgroundColor:"#C5FF95"},
+                    headerTransparent: 100,
+                }}/>    
+
+                <Stack.Screen name ='Produtos'component={Produtos}options={{
+                    headerTitle:'', 
+                    headerStyle:{backgroundColor:"#C5FF95"},
+                    headerTransparent: 100,
+                }}/> 
+
+                <Stack.Screen name ='Filtros'component={Filtros}options={{
+                    headerTitle:'', 
+                    headerStyle:{backgroundColor:"#C5FF95"},
+                    headerTransparent: 100,
+                }}/>  
+
+                <Stack.Screen name ='FiltrosProdutos'component={FiltrosProdutos}options={{
+                    headerTitle:'', 
+                    headerStyle:{backgroundColor:"#C5FF95"},
+                    headerTransparent: 100,
+                }}/>  
+
+<               Stack.Screen name ='Compras'component={Compras}options={{
+                    headerTitle:'', 
+                    headerStyle:{backgroundColor:"#C5FF95"},
+                    headerTransparent: 100,
+                }}/>  
+
+
+
 
                    
                     
-                </Drawer.Navigator>
+                </Stack.Navigator>
            
                
             </NavigationContainer>

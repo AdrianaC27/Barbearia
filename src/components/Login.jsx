@@ -29,7 +29,7 @@ export default props =>{
                 fontFamily:'Arial',
                 fontWeight: 'bold',
                 textAlign:'center',
-                marginTop:35
+                marginTop:10
                 
                 
                 
@@ -40,7 +40,7 @@ export default props =>{
                 fontFamily:'Arial',
                 fontWeight: 'bold',
                 textAlign:'center',
-                marginTop:35,
+                marginTop:10,
                 color:'white'
               
 
@@ -54,7 +54,7 @@ export default props =>{
             }}>
                 <Button style={{
                     backgroundColor:'#F4538A',
-                    margin:20,
+                    margin:10,
                     
                     
                 }}onPress={()=> props.navigation.navigate('Tipos')} textColor="white" >
@@ -64,11 +64,55 @@ export default props =>{
 
                 <Button style={{
                     backgroundColor:'#F4538A',
-                    margin:20
+                    margin:10
                 }}onPress={()=> props.navigation.navigate('Profissional')} textColor="white">
                     PROFISSIONAL        
 
                 </Button>
+
+                <Button style={{
+                    backgroundColor:'#F4538A',
+                    margin:10
+                }}onPress={()=> props.navigation.navigate('Nomes')} textColor="white">
+                    Nomes        
+
+                </Button>
+
+                <Button style={{
+                    backgroundColor:'#F4538A',
+                    margin:10
+                }}onPress={()=> props.navigation.navigate('Produtos')} textColor="white">
+                    Produtos        
+
+                </Button>
+
+                <Button style={{
+                    backgroundColor:'#F4538A',
+                    margin:10
+                }}onPress={()=> props.navigation.navigate('Filtros')} textColor="white">
+                    Filtros       
+
+                </Button>
+
+                <Button style={{
+                    backgroundColor:'#F4538A',
+                    margin:10
+                }}onPress={()=> props.navigation.navigate('FiltrosProdutos')} textColor="white">
+                    Filtros Produtos        
+
+                </Button>
+
+                <Button style={{
+                    backgroundColor:'#F4538A',
+                    margin:10
+                }}onPress={()=> props.navigation.navigate('Compras')} textColor="white">
+                    Compras        
+
+                </Button>
+
+                
+
+                
                     
             </View>
 
